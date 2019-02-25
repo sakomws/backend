@@ -44,8 +44,8 @@ Check postgres status:
 
 OR:
 ```
-sudo service postgresql status`
-``
+sudo service postgresql status
+```
 
 Check which port listens:
 ```
