@@ -7,21 +7,27 @@ List databases:
 \l
 ```
 Switch database:
-```\c
+```
+\c
 ```
 Display tables:
-```\dt
+```
+\dt
 ```
 
 Remove Postgres:
 
 Delete config and database:
 
-```sudo pg_dropcluster --stop 9.6 main```
+```
+sudo pg_dropcluster --stop 9.6 main
+```
 
 Delete postgresql:
 
-```sudo apt-get remove --purge postgresql postgresql-9.6```
+```
+sudo apt-get remove --purge postgresql postgresql-9.6
+```
 
 Reinstall Postgres:
 ```
@@ -33,15 +39,23 @@ sudo chmod g+wx /var/log/postgresql
 
 Check postgres status:
 ```
-/etc/init.d/postgresql status/start/stop```
-or:```
-sudo service postgresql status```
+/etc/init.d/postgresql status/start/stop
+```
 
-Check which port listens:```
-sudo netstat -nl | grep postgres```
+OR:
+```
+sudo service postgresql status`
+``
 
-Kill all postgres:```
-sudo pkill -u postgres```
+Check which port listens:
+```
+sudo netstat -nl | grep postgres
+```
+
+Kill all postgres:
+```
+sudo pkill -u postgres
+```
 
 
 
